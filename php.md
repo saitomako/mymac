@@ -36,3 +36,21 @@ To restart php@7.4 after an upgrade:
 Or, if you don't want/need a background service you can just run:
   /usr/local/opt/php@7.4/sbin/php-fpm --nodaemonize
 ```
+
+```
+brew install httpd
+```
+
+```
+DocumentRoot is /usr/local/var/www.
+
+The default ports have been set in /usr/local/etc/httpd/httpd.conf to 8080 and in
+/usr/local/etc/httpd/extra/httpd-ssl.conf to 8443 so that httpd can run without sudo.
+
+To restart httpd after an upgrade:
+  brew services restart httpd
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/httpd/bin/httpd -D FOREGROUND
+```
+
+
