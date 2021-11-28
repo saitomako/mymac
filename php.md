@@ -53,4 +53,8 @@ Or, if you don't want/need a background service you can just run:
   /usr/local/opt/httpd/bin/httpd -D FOREGROUND
 ```
 
+## lynxも必要(apachectlで使っている)
+```
+brew install lynx
+```
 
